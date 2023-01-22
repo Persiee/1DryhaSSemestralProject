@@ -34,6 +34,7 @@ public class Uloha1DryhaSerhii {
                     MaxLenght=1;
                     StartIndex=i+1;
                 }
+                //saving MaxLenght and StartIndex
                 if(tempML<MaxLenght){
                         tempML=MaxLenght;
                         tempSI=StartIndex;
