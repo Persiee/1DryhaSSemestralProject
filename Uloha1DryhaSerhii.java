@@ -41,8 +41,8 @@ public class Uloha1DryhaSerhii {
                     }
                 LastNum=sequence[i];
             }
-        System.out.println("Nejdelší posloupnost: "+ tempML);
-        System.out.println("Začátek posloupnosti: "+tempSI);
+        System.out.println("Nejdelsi posloupnost: "+ tempML);
+        System.out.println("Zacatek posloupnosti: "+tempSI);
         }
     }
 }
