@@ -23,20 +23,21 @@ public class Uloha1DryhaSerhii {
                 //checking every number if it bigger than previous number
                 sequence[i]=sc.nextInt();
                 if (sequence[i]>LastNum) {
-                    if(MaxLenght==0){
-                        StartIndex=i+1;
-                    }
                     MaxLenght++;
                 }else{
                     MaxLenght=1;
                     StartIndex=i+1;
-                }
-                //saving MaxLenght and StartIndex
-                if(tempML<MaxLenght){
+                    //saving MaxLenght and StartIndex
+                    if(tempML<MaxLenght){
                         tempML=MaxLenght;
                         tempSI=StartIndex;
                     }
+                }
                 LastNum=sequence[i];
+            }
+            if (tempML < MaxLenght) {
+                tempML = MaxLenght;
+                tempSI = StartIndex;
             }
         System.out.println("Nejdelsi posloupnost: "+ tempML);
         System.out.println("Zacatek posloupnosti: "+tempSI);
